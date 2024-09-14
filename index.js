@@ -65,5 +65,22 @@ function initMenuSystem(menu) {
     displayMenuItems(menu);
 }
 
+// Callback function to clear the cart
+function clearCart() {
+    const orderItemsList = document.getElementById('order-items');
+    const orderTotalElement = document.getElementById('order-total');
+
+    // Remove all child elements from the order items list
+    while (orderItemsList.firstChild) {
+        orderItemsList.removeChild(orderItemsList.firstChild);
+    }
+
+    // Reset the total to 0
+    orderTotalElement.textContent = 'R0.00';
+}
+
+// Event listener to the "Clear Cart" button
+document.getElementById('clear-cart').addEventListener('click', clearCart);
+
 // Start the menu system by calling the init function
 initMenuSystem(menu);

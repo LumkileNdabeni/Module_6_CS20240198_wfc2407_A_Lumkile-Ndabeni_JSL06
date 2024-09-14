@@ -51,6 +51,23 @@ main {
     padding-bottom: 4em;
 }
 
+
+#clear-cart { /* Styling for the clear cart button/function */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#clear-cart:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
 #menu h3, #order h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
